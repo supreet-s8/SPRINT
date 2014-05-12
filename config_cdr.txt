@@ -1,0 +1,15 @@
+NAESasCubes:mergeFeedsRise:Matching Subs Count:IPDR,LTE,VOICE,WIMAX
+NAESasCubes:mergeFeedsRise:Input Record Count:IPDR,LTE,VOICE,WIMAX
+NAESasCubes:mergeFeedsRise:Matching Subs Tonnage:VOICE,WIMAX
+NAESasCubes:mergeFeedsRise:Matching Subs Tonnage 1xRTT:IPDR
+NAESasCubes:mergeFeedsRise:Matching Subs Tonnage eHRPD:LTE
+NAESasCubes:mergeFeedsRise:Matching Subs Tonnage EVDO:IPDR
+NAESasCubes:mergeFeedsRise:Matching Subs Tonnage LTE:LTE
+NAESasCubes:mergeFeedsRise:Non Matching Subs Count:IPDR,LTE,VOICE,WIMAX
+NAESasCubes:mergeFeedsRise:Non Matching Subs Tonnage:VOICE,WIMAX
+NAESasCubes:mergeFeedsRise:Non Matching Subs Tonnage 1xRTT:IPDR
+NAESasCubes:mergeFeedsRise:Non Matching Subs Tonnage eHRPD:LTE
+NAESasCubes:mergeFeedsRise:Non Matching Subs Tonnage EVDO:IPDR1
+NAESasCubes:mergeFeedsRise:Non Matching Subs Tonnage LTE:LTE
+NAESasCubes:mergeFeedsRise:Non Roaming Unknown NetworkSegment:IPDR
+NAESasCubes:baseCube:00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23:Unique Subscribers

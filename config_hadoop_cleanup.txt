@@ -1,0 +1,2 @@
+/tools/output/wimax/:1
+/tools/output/voice/:2
