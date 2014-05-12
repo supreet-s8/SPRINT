@@ -1,0 +1,44 @@
+Sreen and Script Monitoring  at Mon Apr 21 18:53:06 PDT 2014
+
+Mail Sent because load_data is not running on 172.30.3.66
+
+Mail Sent because load_data_hive.py is not running on 172.30.3.66
+
+iNSTA Lag at Mon Apr 21 18:53:10 PDT 2014
+
+Component NerActual on 172.30.3.62 lag in H:M:S 04:17:17:53:10
+Mail Sent because bin time limit is exceded for NerActual on 172.30.3.62
+
+Component RrBinDaily on 172.30.3.62 lag in H:M:S 04:17:17:53:10
+Mail Sent because bin time limit is exceded for RrBinDaily on 172.30.3.62
+
+Component aggregationinterval on 172.30.3.62 lag in H:M:S 03:22:17:53:10
+Mail Sent because bin time limit is exceded for aggregationinterval on 172.30.3.62
+
+Collector Lag at Mon Apr 21 18:53:13 PDT 2014
+
+Current Collector lag at 172.30.3.60
+TOTAL Lag cdmaIpdr = 21 Hours 
+Mail Sent because lag limit is exceded for cdmaIpdr on 172.30.3.60
+
+Current Collector lag at 172.30.3.60
+TOTAL Lag cdmaVoice = 20 Hours 
+Mail Sent because lag limit is exceded for cdmaVoice on 172.30.3.60
+
+Current Collector lag at 172.30.3.60
+TOTAL Lag lteIpdr = 01 Hours 
+Mail Sent because lag limit is exceded for lteIpdr on 172.30.3.60
+
+Current Collector lag at 172.30.3.60
+TOTAL Lag wimax = 10 Hours 
+Mail Sent because lag limit is exceded for wimax on 172.30.3.60
+
+Hadoop monitoring at Mon Apr 21 18:53:17 PDT 2014
+
+DFS Used for SAS is 6.46
+ Mail Sent SAS DFS used is 6.46
+DFS Used for NAE is 6.46
+ Hadoop monitoring at Mon Apr 21 18:53:21 PDT 2014
+
+The filesystem under path '/' is HEALTHY for SAS
+The filesystem under path '/' is HEALTHY for NAE
