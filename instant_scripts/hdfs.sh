@@ -1,0 +1,2 @@
+#for i in ipdr_replay_2 lte_25 voice wimax ;do echo '****************************';echo $i;echo '****************************';hadoop dfs -du /data/collector/output/$i/201[4-5]/[0-9][0-9]/[0-9][0-9] 2>/dev/null|tail -1|awk -F "vip:9000" '{print $NF}';echo '****************************';echo ' ';done
+for i in  lte_17 ipdr lte_replay lte  ;do echo '****************************';echo $i;echo '****************************';hadoop dfs -du /data/collector/output/$i/201[4-5]/[0-9][0-9]/[0-9][0-9] 2>/dev/null;echo '****************************';echo ' ';done

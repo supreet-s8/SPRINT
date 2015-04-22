@@ -1,0 +1,41 @@
+# Guavus Tools Package 
+# Copyright 2014 Guavus Network Systems Ltd.
+# 
+#
+# Env setup 
+# Covers Tall Maple 2.x
+#
+# 
+#SSHTIMEOUT=300
+ROOTUSER="root"
+
+# SPRINT
+gdssprcol1=10.23.80.4
+gdssprcol2=10.23.80.5
+gdssprcmp1=10.23.80.10
+#gdssprcmp2=10.23.80.11
+gdssprcmp3=10.23.80.12
+gdssprcmp4=10.23.80.13
+gdssprcmp5=10.23.80.14
+gdssprcmp6=10.23.80.15
+gdssprcmp7=10.23.80.16
+gdssprcmp8=10.23.80.17
+gdssprcmp9=10.23.80.18
+gdssprcmp10=10.23.80.19
+gdssprins1=10.23.80.20
+gdssprins2=10.23.80.21
+gdssprrge1=10.23.80.22
+gdssprrge2=10.23.80.23
+gdssprrub1=10.23.80.6
+gdssprrub2=10.23.80.7
+
+#SAS IP
+#10.23.80.26
+#10.23.80.39
+#10.23.80.45
+
+# Binaries/Aliases
+SSH="/usr/bin/ssh -q -l ${ROOTUSER} "
+
+# CLI Commands
+CLI="/opt/tms/bin/cli"

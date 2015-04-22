@@ -1,0 +1,65 @@
+#!/usr/bin/perl
+
+use strict;
+use Getopt::Long;
+use Data::Dumper;
+
+my %DS=();
+my $past=0;
+my $hour=undef;
+my $file="/data/reportNSflow";
+my $output=GetOptions( "hours:s" => \$hour );
+
+if (! $hour ) {print "\nFalling back to fetch report for last one hour by default...\nOtherwise, use \"--hours\" flag to specify for how many hours the report is expected.\n\n"; $hour=1;}
+
+# read report
+sub createDS {
+
+        my $self=shift;
+        eval {
+        open RE, "$file" or die "Unable to open the file.";
+        };
+        if ($@) {
+                print "Error: Unable to open the file $file.\n";
+                print "Committing Exit...!\n";
+		exit;
+
+        }
+        my @file=();
+        @file=<RE>;
+        close RE;
+        my @opts=();
+	foreach my $line (@file) {
+		my ($ip,$epoch,$bytes)=split(/:/,$line);
+		chomp $bytes;
+		next if ($ip !~ /(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/);
+		$DS{$ip}=0 if (! $DS{$ip});  		
+		$DS{$ip}=$DS{$ip}+$bytes if ($past<=$epoch);
+
+	}
+
+}
+
+sub computehour {
+
+	my $now=time();
+	my $d=`date +%M`;
+	# Subtract the seconds for the minutes past the current hour. Then go back by the hours specified by --hours flag.
+	$past=($now-$d*60)-($hour*60*60);
+}
+# MAIN
+
+print "Reading report for NetScout flow count to downstream servers for last $hour hour\(s\)\n";
+print "IP Address\t\t\t Count(bytes)\t\t\t Count(Mb)\t\t\t Count(Gb)\n";
+
+computehour();
+createDS();
+
+
+my $divisor=1024*1024;
+foreach (keys %DS) {
+my $mb=sprintf("%.3f",$DS{$_}/$divisor);
+my $gb=sprintf("%.3f",$DS{$_}/($divisor*1024));
+printf "$_\t\t\t $DS{$_}\t\t\t $mb\t\t\t $gb\n";
+}
+print "\n";

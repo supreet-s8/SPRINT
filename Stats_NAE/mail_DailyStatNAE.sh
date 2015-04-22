@@ -1,0 +1,1 @@
+echo "Daily NAE Stat" |mail -s "SPRINT daily stat for NAE" -a  /data/offshore_support/DailyStatNAE/`ls -lrth   /data/offshore_support/DailyStatNAE/ |tail -2|head -1 |awk '{print $NF}'` -r  Sprint_production.monitoring@guavus.com          jatinder.singh@guavus.com samuel.joseph@guavus.com robert.phillips@guavus.com eric.darby@guavus.com mohsin.ali@guavus.com 

@@ -1,0 +1,7 @@
+# NetScout sftp file copy mediation script
+
+- Dependencies
+	- pexpect-2.3 (included)
+	- daemon.py (included)
+
+- Usage
